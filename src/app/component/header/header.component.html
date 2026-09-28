@@ -1,0 +1,30 @@
+
+<!-- Itterpolation -->
+<p>{{tituloHeader}}</p>
+<p>{{retornarSubTitulo()}}</p>
+
+<!-- proprieties Binding -->
+<h1 [innerText]="'Meu texto'"></h1>
+<h2 [innerText]="valorH2"></h2>
+<button [disabled]="habilatarbutao">Salvar</button>
+<input [value]="valorInput"> 
+<br>
+
+<!-- Event Binding - Recupear eventos -->
+<button (click) = "atualizarTitulo()" >Atualizar</button>
+
+<!-- Two-way Data Binding - Necessario importat o FormsModule -->
+<input [(ngModel)]="valorInput">
+
+
+<!-- class Binding  -->
+<span [class.minha-cor]="aplicarclass">{{tituloHeader}}</span>
+
+<!-- Style Binding -->
+<h3 [style.color]="estiloCor">Meu Elemento HTML</h3>
+
+<!-- Valor vindo do componente pai renderizado na tela -->
+ <h1>Valor Vindo do Pai:: {{tituloVindoPai}}</h1>
+
+ <!-- Enviar valor para o pai -->
+<button (click)="emitirValor()" >Enviar valor</button>

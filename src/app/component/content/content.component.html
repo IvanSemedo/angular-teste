@@ -1,0 +1,24 @@
+<!-- Control Flow -->
+
+@if (tipoUsuario=='Feliz'){
+    <p>Entrou no IF e estou {{tipoUsuario}}</p>
+}@else{
+    <p>Não entrou no IF e estou {{tipoUsuario}}</p>
+}
+
+@switch (tipoUsuario) {
+    @case ('Feliz') {
+        <p>Eu estou feliz</p>
+    }
+    @case ('Triste') {
+        <p>Estou Triste</p>
+    }
+    @default {
+        <p>Indeferente</p>
+    }
+}
+
+
+@for (user of usuarios; track user.id) {
+<p [style.color]="user.id === 1 ? 'red' : ''">Nome: {{user.nome}}</p>
+}
