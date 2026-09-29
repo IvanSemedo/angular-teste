@@ -1,0 +1,8 @@
+<p>form-simples works!</p>
+
+<form (ngSubmit)="enviarFormulario(usuarioForm)" action="" #usuarioForm="ngForm">
+
+    <label>Nome:</label>
+    <input name="nomeUsuario" [(ngModel)]="nomeUsuario" type="text" required />
+    <button [disabled]="!usuarioForm.form.valid" type="submit">Enviar</button>
+</form>

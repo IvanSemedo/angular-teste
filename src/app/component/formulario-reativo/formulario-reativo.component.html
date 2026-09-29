@@ -1,0 +1,6 @@
+<p>formulario-reativo works!</p>
+
+<form [formGroup]="usuarioform" action="" (ngSubmit)="enviarFormulario()">
+Nome: <input type="text" formControlName="nome"/>
+<button type="submit" [disabled]="!usuarioform.valid">Enviar</button>
+</form>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { StorageService } from '../../service/storage.service';
 
 @Component({
   selector: 'app-content',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './content.component.css'
 })
 export class ContentComponent {
+
+  readonly _storageService = inject(StorageService);
 
   usuarios = [
     {id:0,

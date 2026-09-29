@@ -22,3 +22,5 @@
 @for (user of usuarios; track user.id) {
 <p [style.color]="user.id === 1 ? 'red' : ''">Nome: {{user.nome}}</p>
 }
+//Consumindo o valor de uma propriedade do service no componente
+<p>Valor vindo do Servie: {{_storageService.usuarioAtual}}</p>

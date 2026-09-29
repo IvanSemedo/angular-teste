@@ -1,5 +1,23 @@
 <h1>{{title}}</h1>
 
-<app-header [tituloVindoPai]="title" (textEmit)="receberValor($event)"></app-header>
+<!-- <app-header [tituloVindoPai]="title" (textEmit)="receberValor($event)"></app-header>
 
-<app-content></app-content>
+<app-content></app-content> -->
+
+<!-- <app-consumir-api></app-consumir-api> -->
+
+
+<!-- <app-form-simples></app-form-simples> -->
+
+<!-- <app-formulario-reativo></app-formulario-reativo> -->
+ <div style="display: inline-block;">
+    <div style="display: inline-block" routerLink="/header" > Header </div><div style="display: inline-block" > / </div>
+    <div style="display: inline-block" routerLink="/content" > Content </div><div style="display: inline-block" > / </div>
+    <div style="display: inline-block" routerLink="/simpleForm" > Formulario Simples </div><div style="display: inline-block" > / </div>
+    <div style="display: inline-block" routerLink="/reactForm" > Formulario Reativo </div><div style="display: inline-block" > / </div>
+    
+ </div>
+
+
+
+<router-outlet/>
